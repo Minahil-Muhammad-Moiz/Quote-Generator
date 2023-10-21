@@ -1,0 +1,48 @@
+:root{
+    --border : rgb(48, 48, 48);
+    --bgcolor : rgb(253, 250, 43);
+    --text: rgb(228, 2, 2);
+}
+#container{
+    display: flex;
+    flex-direction: column ;
+    border:  5px solid var(--border);
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: var(--bgcolor);
+    color: var(--text);
+    padding: 30px;
+    margin: auto;
+    font-family:cursive;
+}
+
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+button{
+    width: 130px;
+    height: 3rem;
+    margin: 1.3rem auto;
+    /* border:  3px solid var(--border); */
+    border-radius: 10px;
+    color: var(--bgcolor);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    padding: 5px;
+    background-color: var(--border);
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: var(--text);
+
+}
