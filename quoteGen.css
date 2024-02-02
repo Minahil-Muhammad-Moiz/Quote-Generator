@@ -1,0 +1,83 @@
+:root{
+    --bgcolor : #149CEA;
+    --text : #FFECD6;
+    --subbg: #0F2167;
+}
+
+body {
+    background-color: var(--bgcolor);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#quoteTab{
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--subbg);
+    color: var(--text);
+    padding: 3rem;
+    box-shadow: 0 0 25px #000000 inset;
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge var(--bgcolor);
+    outline: none;
+    background-color: transparent;
+    color: var(--text);
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: var(--subbg);
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: var(--subbg);
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
